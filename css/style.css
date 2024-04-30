@@ -1,0 +1,108 @@
+body{
+    background-color: rgb(240, 234, 240);
+    color: #222;
+    display: grid;
+    grid-template-columns: 1fr 120px minmax(300px, 800px) 1fr ;
+}
+ul{
+    list-style: none;
+}
+.menu{
+   grid-column: 3/5; 
+   margin-top: 2rem;
+   margin-bottom: 2rem;
+   background-color: rgb(70, 3, 70);
+   
+}
+.menu ul{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+}
+.menu li a{
+    display: block;
+    padding: 10px;
+    margin-right: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: white;
+
+}
+.grid-section{
+    grid-column: 2/4;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: 100px 300px 1fr;
+    grid-gap: 20px;
+    margin-bottom: 4rem;
+}
+.titulo{
+    font-size: 6rem;
+    line-height: 1;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    grid-column: 1/4;
+}
+.religioes p{
+    line-height: 1.2;
+    margin-bottom: 1rem;
+    grid-column: 1/4;
+}
+.religioes h2{
+    text-transform: uppercase;
+    letter-spacing: .1rem;
+    margin-bottom: 1rem;
+    color: blueviolet;
+    font-size: 1rem;
+}
+.religioes h2::after, .faq-list dt::after, .contato ul li::before{
+    content: '';
+    display: inline-block;
+    width: 30px;
+    height: 10px;
+    margin-left: 10px;
+    background: purple;
+}
+.religioes-list{
+    height: 400px;
+    overflow-y: scroll;
+    grid-column: 2;
+}
+.religioes-list::-webkit-scrollbar{
+    width: 15px;
+}
+.religioes-list::-webkit-scrollbar-thumb{
+    background-color: purple;
+    border-left: 4px solid  rgb(240, 234, 240);
+}
+.religioes-descricao{
+    grid-column: 3;
+}
+.faq-list{
+    grid-column: 2/4;
+
+}
+.faq-list dt{
+    font-weight: bold;
+    margin-top: .5rem;
+    color: blueviolet;;
+}
+.faq-list dd{
+    margin-left: 0px;
+}
+.mapa{
+    grid-column: 2/3;
+}
+.contato ul li{
+    margin-bottom: 20px;
+}
+.contato ul li::before{
+    margin-right: 10px;
+}
+
+img{
+    width: 200px;
+}
