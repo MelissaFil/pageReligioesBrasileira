@@ -58,12 +58,12 @@ ul{
     color: blueviolet;
     font-size: 1rem;
 }
-.religioes h2::after, .faq-list dt::after, .contato ul li::before{
+.religioes h2::before, .faq-list dt::before, .contato ul li::before{
     content: '';
     display: inline-block;
     width: 30px;
     height: 10px;
-    margin-left: 10px;
+    margin-right: 10px;
     background: purple;
 }
 .religioes-list{
@@ -106,7 +106,7 @@ ul{
 .religioes-list img{
     width: 200px;
 }
-.religioes-list li{
+.religioes-list li, .faq-list dt{
     cursor: pointer;
 }
 .religioes-descricao section{
@@ -116,6 +116,21 @@ ul{
 .religioes-descricao section.ativo{
     display:block;
     animation: show .5s forwards;
+}
+.faq-list dt::after{
+    content: "↴";
+}
+.faq-list dt.ativo::after{
+    content: "⬏";
+    transform: rotate(180deg);
+}
+.faq-list dd{
+    display: none;
+   
+}
+.faq-list dd.ativo{
+    display: block;
+    animation: showDown .5s forwards;
 }
 
 
@@ -128,4 +143,17 @@ ul{
         opacity:100;
         transform: translate3d(0, 0, 0);
     }
+}
+
+@keyframes showDown {
+    from{
+        opacity: 0;
+        transform: translate3d(0, -20px, 0);
+    }
+    to{
+        opacity:100;
+        transform: translate3d(0, 0, 0);
+    }
+}
+  
 }
