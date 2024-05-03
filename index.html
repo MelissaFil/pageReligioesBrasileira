@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <nav class="menu">
+    <nav class="js-tabcontent menu">
         <ul>
             <li><a href="">Religiões</a></li>
             <li><a href="">Faq</a></li>
@@ -17,22 +17,22 @@
     </nav>
     <section class="grid-section religioes" id="religioes">
         <h1 class="titulo">Religiões Brasileiras</h1>
-        <ul class="religioes-list">
-            <li>
+        <ul class="js-tabimg religioes-list">
+            <li data-img="catolicismo">
                 <img src="img/catolico.jpg" alt="">
             </li>
-            <li>
+            <li data-img="protestantismo">
                 <img src="img/evangelico.jpg" alt="">
             </li>
-            <li>
+            <li data-img="espiritismo">
                 <img src="img/espiritismo.jpg" alt="">
             </li>
-            <li>
+            <li data-img="ubandismo">
                 <img src="img/umbanda.jpg" alt="">
             </li>
         </ul>
-        <div class="religioes-descricao">
-            <section>
+        <div class="religioes-descricao js-tabcontent">
+            <section class="catolicismo ativo">
                 <h2>Catolicismo</h2>
                 <p>
                     A principal religião do Brasil, desde o século XVI, tem sido o catolicismo romano. Ela foi introduzida por missionários jesuítas que acompanharam os exploradores e colonizadores portugueses
@@ -45,7 +45,7 @@
                     a comunidade católica perdeu uma população equivalente à de Curitiba
                 </p>
             </section>
-            <section>
+            <section class="protestantismo">
                 <h2>Protestanismo</h2>
                 <p>O protestantismo é o segundo maior segmento religioso do Brasil, representado principalmente pelas igrejas evangélicas, com cerca de 59,8 milhões de fiéis, 
                 o que representa um sexto da população brasileira.[21] Entre as maiores denominações protestantes tradicionais do Brasil em número de adeptos estão os batistas 
@@ -53,7 +53,7 @@
                 Entre os protestantes evangelicalistas (ou pentecostais e os neopentecostais), os grupos com o maior número de seguidores são a Assembleia de Deus (12,3 milhões), 
                 a Congregação Cristã no Brasil (2,3 milhões), a Igreja Universal do Reino de Deus (1,8 milhão) e a Igreja do Evangelho Quadrangular (1,8 milhão)</p>
             </section>
-            <section>
+            <section class="espiritismo">
                 <h2>Espiritismo</h2>
                 <p>De acordo com o último censo realizado pelo Instituto Brasileiro de Geografia e Estatística (IBGE), em 2010, o Brasil possuía 4,8 milhões de espíritas, 
                     sendo esse o terceiro maior grupo religioso do país, representando cerca de 3% da população brasileira. Com efeito, o IBGE trata os termos kardecismo 
@@ -65,7 +65,7 @@
                     Bezerra de Menezes foi presidente da Federação Espírita Brasileira (FEB) por duas gestões. A FEB foi fundada em janeiro de 1884, 
                     por Elias da Silva, com a finalidade de unificar o pensamento espírita no Brasil</p>
             </section>
-            <section>
+            <section class="ubandismo">
                 <h2>Ubandismo</h2>
                 <p>A umbanda é considerada por muitos uma religião nascida no Brasil, tendo certo reconhecimento legal como a única religião brasileira. 
                     Surgiu em 15 de novembro de 1908 em São Gonçalo da Guanabara, no Rio de Janeiro, embora existam relatos de outras datas e locais de manifestação 
@@ -105,7 +105,7 @@ ninguém será privado de direitos por motivo de crença religiosa
             <li>(84)986457019</li>
         </ul>
     </section>
-    <script src="/variaveis/script.js"></script>
+    <script src="/religioesBrasileiras/script.js"></script>
 </body>
 
 </html>

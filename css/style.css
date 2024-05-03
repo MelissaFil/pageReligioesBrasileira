@@ -106,3 +106,10 @@ ul{
 img{
     width: 200px;
 }
+.religioes-descricao section{
+    display: none;
+}
+
+.religioes-descricao section.ativo{
+    display:block;
+}
