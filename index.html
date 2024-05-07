@@ -10,9 +10,9 @@
 <body>
     <nav class="js-tabcontent menu">
         <ul>
-            <li><a href="">Religiões</a></li>
-            <li><a href="">Faq</a></li>
-            <li><a href="">Contato</a></li>
+            <li><a href="#religioes">Religiões</a></li>
+            <li><a href="#faq">Faq</a></li>
+            <li><a href="#contato">Contato</a></li>
         </ul>
     </nav>
     <section class="grid-section religioes" id="religioes">
@@ -38,9 +38,10 @@
                     A principal religião do Brasil, desde o século XVI, tem sido o catolicismo romano. Ela foi introduzida por missionários jesuítas que acompanharam os exploradores e colonizadores portugueses
                     nas terras do país recém-descoberto. O Brasil é considerado o maior país do mundo em número de católicos nominais, com 64,6% da população brasileira declarando-se católica, 
                     de acordo com o Censo do IBGE de 2010.
+
                     No transcorrer do século XX, foi perceptível uma diminuição no interesse pelas formas tradicionais de religiosidade no país. Um reflexo disso é o aparecimento de 
                     grande número de pessoas que se intitulam católicos "não praticantes". Uma pesquisa de 2007 da Fundação Getúlio Vargas, no entanto, indicou que o número de 
-                    católicos estagnou no país depois de mais de 130 anos de queda.[12] Entretanto, segundo dados do Censo do IBGE, entre os anos 2000 e 2010, o total de católicos 
+                    católicos estagnou no país depois de mais de 130 anos de queda. Entretanto, segundo dados do Censo do IBGE, entre os anos 2000 e 2010, o total de católicos 
                     diminuiu 1,4%, enquanto a população brasileira aumentou 12,3%. Em 2010, havia 123,2 milhões de católicos no País; em 2000, eram 124,9 milhões. Em dez anos, 
                     a comunidade católica perdeu uma população equivalente à de Curitiba
                 </p>
@@ -48,8 +49,8 @@
             <section class="protestantismo">
                 <h2>Protestanismo</h2>
                 <p>O protestantismo é o segundo maior segmento religioso do Brasil, representado principalmente pelas igrejas evangélicas, com cerca de 59,8 milhões de fiéis, 
-                o que representa um sexto da população brasileira.[21] Entre as maiores denominações protestantes tradicionais do Brasil em número de adeptos estão os batistas 
-                (3,7 milhões), presbiterianos (1,5 milhão),[22] Adventistas do Sétimo Dia (1,5 milhão), luteranos (1 milhão) e metodistas (340 mil). 
+                o que representa um sexto da população brasileira. Entre as maiores denominações protestantes tradicionais do Brasil em número de adeptos estão os batistas 
+                (3,7 milhões), presbiterianos (1,5 milhão), Adventistas do Sétimo Dia (1,5 milhão), luteranos (1 milhão) e metodistas (340 mil). 
                 Entre os protestantes evangelicalistas (ou pentecostais e os neopentecostais), os grupos com o maior número de seguidores são a Assembleia de Deus (12,3 milhões), 
                 a Congregação Cristã no Brasil (2,3 milhões), a Igreja Universal do Reino de Deus (1,8 milhão) e a Igreja do Evangelho Quadrangular (1,8 milhão)</p>
             </section>
@@ -57,7 +58,7 @@
                 <h2>Espiritismo</h2>
                 <p>De acordo com o último censo realizado pelo Instituto Brasileiro de Geografia e Estatística (IBGE), em 2010, o Brasil possuía 4,8 milhões de espíritas, 
                     sendo esse o terceiro maior grupo religioso do país, representando cerca de 3% da população brasileira. Com efeito, o IBGE trata os termos kardecismo 
-                    e espiritismo como equivalentes em sua classificação censitária.[47]
+                    e espiritismo como equivalentes em sua classificação censitária.
 
                     A doutrina espírita teve através de nomes como Bezerra de Menezes e Chico Xavier a oportunidade de se popularizar, espalhando 
                     seus ensinamentos por grande parte do território brasileiro. Hoje, o país é o que reúne o maior número de adeptos do espiritismo 
@@ -81,27 +82,51 @@
         <dl class="faq-list">
             <dt>É permitido escolher sua religião no Brasil ? </dt>
             <dd>À luz do inciso VIII do art. 5º da Constituição Federal, 
-ninguém será privado de direitos por motivo de crença religiosa 
+                ninguém será privado de direitos por motivo de crença religiosa 
                 ou de convicção filosófica ou política, salvo se as invocar para 
                 eximir-se de obrigação legal a todos imposta e recusar-se a 
                 cumprir prestação alternativa.
             </dd>
+            <br>
             <dt>Existem outras religiões no Brasil ? </dt>
-            <dd> dados do censo do Instituto Brasileiro de Geografia e 
+            <dd>Dados do censo do Instituto Brasileiro de Geografia e 
                 Estatística (IBGE) realizado em 2010, a religião predominante no 
                 Brasil é a católica, seguida pelas religiões evangélicas, 
                 espíritas e afro-brasileiras. Existem também, em menor número, 
                 adeptos do budismo, islamismo e judaísmo..
             </dd>
+            <br>
             <dt>É crime descriminar as pessoas por causa de sua religião ? </dt>
-            <dd> Sim, segungo o artigo 20 da lei nº 7.716 Serão punidos, na forma 
+            <dd> Sim, segundo o artigo 20 da lei nº 7.716 Serão punidos, na forma 
                 desta Lei, os crimes resultantes de discriminação ou preconceito 
                 de raça, cor, etnia, religião ou procedência nacional, quem praticar, 
                 induzir ou incitar a discriminação ou preconceito de raça, 
                 cor, etnia, religião ou procedência nacional poderá cumprir 
                 pena de reclusão de um a três anos e multa.
             </dd>
+            <br>
         </dl>      
+    </section>
+    <section class="grid-section dados" id="dados">
+        <h1 class="titulo">Dados populacionais</h1>
+        <dl class="porcentagem-religioes">
+            <div class="item-porcentagem">
+                <dt data-religiao="catolico">Católicos</dt>
+                <dd data-porcentagem=""></dd>
+            </div>
+            <div class="item-porcentagem">
+                <dt data-religiao="evangelico">Evangélicos</dt>
+                <dd data-porcentagem=""></dd>
+            </div>
+            <div class="item-porcentagem">
+                <dt data-religiao="espirita">Espírita</dt>
+                <dd data-porcentagem=""></dd>
+            </div>
+            <div class="item-porcentagem">
+                <dt data-religiao="umbanda">Umbanda</dt>
+                <dd data-porcentagem=""></dd>
+            </div>
+        </dl>
     </section>
     <section class="grid-section contato" id="contato">
         <h1 class="titulo">Contato</h1>

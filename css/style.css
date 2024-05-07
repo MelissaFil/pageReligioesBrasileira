@@ -132,8 +132,34 @@ ul{
     display: block;
     animation: showDown .5s forwards;
 }
+.porcentagem-religioes{
+    display: flex;
+    flex-direction: row;
+}
+.porcentagem-religioes{
+    display: flex;
+    flex-direction: row;
+}
+.item-porcentagem{
+    margin-left: 80px;
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items:flex-end;
 
-
+}
+.item-porcentagem dt{
+ color: blueviolet;
+ text-transform: uppercase;
+ font-weight: 700;
+}
+.item-porcentagem dd{
+    font-size: 25px;
+    font-weight: 700;
+}
+.mapa img{
+    width: 300px;
+}
 @keyframes show {
     from{
         opacity: 0;
@@ -154,6 +180,4 @@ ul{
         opacity:100;
         transform: translate3d(0, 0, 0);
     }
-}
-  
 }
