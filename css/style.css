@@ -3,6 +3,7 @@ body{
     color: #222;
     display: grid;
     grid-template-columns: 1fr 120px minmax(300px, 800px) 1fr ;
+    font-family: "Roboto", sans-serif;
 }
 ul{
     list-style: none;
@@ -42,9 +43,10 @@ ul{
 .titulo{
     font-size: 4rem;
     line-height: 1;
-    font-weight: bold;
+    
     margin-bottom: 1rem;
     grid-column: 1/4;
+    font-family: "Quicksand", sans-serif;
 }
 .religioes p{
     line-height: 1.2;

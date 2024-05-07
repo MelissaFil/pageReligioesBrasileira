@@ -64,7 +64,6 @@ function scrollSection(e){
     e.preventDefault();
     const href = e.currentTarget.getAttribute('href');
     const section = document.querySelector(href);
-    console.log(href, section)
     section.scrollIntoView({
         behavior:'smooth',
         block:'start'
