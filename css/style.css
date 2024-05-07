@@ -181,3 +181,42 @@ ul{
         transform: translate3d(0, 0, 0);
     }
 }
+
+@media (max-width: 540px) {
+    .religioes-list img{
+        height:200px
+    }
+    .religioes-list{
+        height: 200px;
+        overflow-y: hidden;
+        grid-column: 2/5;
+        display: flex;
+    }
+    
+    .religioes-descricao{
+        grid-column: 2;
+    }
+    .menu {
+        grid-column: 2 / 5;
+    }
+    .grid-section {
+        display: ruby-text;
+    }
+    .porcentagem-religioes {
+
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .item-porcentagem {
+        align-items: flex-start;
+        margin-left: 10px;
+    }
+
+    .item-porcentagem dd {
+
+        margin-inline-start: 5px;
+    }
+    .titulo {
+        font-size: 3rem;
+    }
+}
