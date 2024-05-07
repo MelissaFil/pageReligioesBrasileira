@@ -60,6 +60,19 @@ function contagemPorcentagemIniti(){
     })
       
 }
+function scrollSection(e){
+    e.preventDefault();
+    const href = e.currentTarget.getAttribute('href');
+    const section = document.querySelector(href);
+    console.log(href, section)
+    section.scrollIntoView({
+        behavior:'smooth',
+        block:'start'
+    })
+
+
+    
+}
 
 function init(){
     activeTabInit();
@@ -72,6 +85,11 @@ function init(){
             window.removeEventListener("scroll", arguments.callee);
         }
     });
+
+    const linkMenu = document.querySelectorAll('.menu a')
+    linkMenu.forEach((item)=>{
+        item.addEventListener('click', scrollSection)
+    })
 }
 
 init()
